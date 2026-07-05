@@ -1,0 +1,23 @@
+# build directories
+build/
+rootfs/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# compiled binaries
+sandbox
+*.o
+*.obj
+
+# dependency files
+*.d
+
+# editor files
+.vscode/
+.idea/
+
+# logs
+*.log
