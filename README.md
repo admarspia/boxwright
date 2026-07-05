@@ -52,7 +52,7 @@ Example:
 sudo ./sandbox run ./test-rootfs /bin/sh
 ```
 
-You'll need a real root filesystem to point at — see [Building a test
+You'll need a real root filesystem to point at. see [Building a test
 rootfs](#building-a-test-rootfs) below.
 
 Root privileges are required for the namespace and mount syscalls used
