@@ -1,6 +1,6 @@
 # Boxwrite
 
-A minimal Linux container runtime built from raw syscalls in C++ — no
+A minimal Linux container runtime built from raw syscalls in C++. no
 `libcontainer`, no `runc` internals reused, no high-level sandboxing
 libraries. This project implements process and filesystem isolation
 primitives directly (`clone`, `unshare`, `mount`, `pivot_root`) to understand
@@ -10,10 +10,10 @@ how container runtimes actually work under the hood.
 
 `sandbox` runs a command inside an isolated environment with:
 
-- **Process isolation** — the sandboxed process gets its own PID namespace
+- **Process isolation** - the sandboxed process gets its own PID namespace
   (it sees itself as PID 1), UTS namespace (independent hostname), and IPC
   namespace, so it can't see or signal processes on the host.
-- **Filesystem isolation** — the sandboxed process is confined to a
+- **Filesystem isolation** - the sandboxed process is confined to a
   dedicated root filesystem via `pivot_root` (not plain `chroot`), with a
   private mount namespace so mount/unmount events don't propagate to the
   host and vice versa. `/proc`, `/sys`, and `/dev` are freshly mounted inside
