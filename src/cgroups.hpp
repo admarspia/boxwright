@@ -1,5 +1,5 @@
 #pragma once
-
+#include <cstddef>  // for size_t
 // Creates the cgroup directory and applies pid/memory/cpu limits.
 // Returns true on success. cgroup_path_out receives the full path,
 // e.g. "/sys/fs/cgroup/sandbox_1234"
