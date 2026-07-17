@@ -25,7 +25,6 @@ how container runtimes actually work under the hood.
 - Network namespace isolation with a veth pair for outbound connectivity
 - Capability dropping and seccomp-bpf syscall filtering
 - Rootless mode via user namespaces
-- Config-file driven setup (rootfs path, limits, capabilities, command)
 
 ## Build
 
